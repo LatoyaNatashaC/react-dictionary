@@ -4,7 +4,7 @@ import "./Dictionary.css";
 export default function Dictionary() {
   return (
     <div className="Dictionary">
-      <form>
+      <form onSubmit={search}>
         <input type="search" autoFocus={true} />
       </form>
     </div>
