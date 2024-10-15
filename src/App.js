@@ -12,7 +12,7 @@ export default function App() {
         <main>
           <Dictionary />
         </main>
-        <footer className="text-center">
+        <footer className="App-footer">
           This project was coded by Latoya Natasha Campbell and is open sourced
           on GitHub and hosted by Netlify
         </footer>
