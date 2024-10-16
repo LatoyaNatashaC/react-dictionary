@@ -3,13 +3,14 @@ import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyWord, setKeyWord] = useState("");
+
   function search(event) {
     event.preventDefault();
-    alert("seaching");
+    alert(`Searching for the definition of ${keyWord}`);
   }
 
   function handleKeywordChange(event) {
-    console.log(event.target.value);
+    setKeyWord(event.target.value);
   }
 
   return (
