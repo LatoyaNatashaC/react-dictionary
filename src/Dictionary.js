@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Dictionary.css";
 
 export default function Dictionary() {
+  let [keyWord, setKeyWord] = useState("");
   function search(event) {
     event.preventDefault();
     alert("seaching");
@@ -10,7 +11,7 @@ export default function Dictionary() {
   return (
     <div className="Dictionary">
       <form onSubmit={search}>
-        <input type="search" autoFocus={true} />
+        <input type="search" autoFocus={true} onChange={handleKeywordChange} />
       </form>
     </div>
   );
