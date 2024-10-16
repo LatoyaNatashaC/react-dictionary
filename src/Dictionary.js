@@ -8,6 +8,10 @@ export default function Dictionary() {
     alert("seaching");
   }
 
+  function handleKeywordChange(event) {
+    console.log(event.target.value);
+  }
+
   return (
     <div className="Dictionary">
       <form onSubmit={search}>
