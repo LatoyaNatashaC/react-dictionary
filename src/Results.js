@@ -1,3 +1,5 @@
 import React from "react";
 
-export default function Results() {}
+export default function Results() {
+  return <div className="Results">Hello from refults</div>;
+}
