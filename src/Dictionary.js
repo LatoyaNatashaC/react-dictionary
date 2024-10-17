@@ -5,9 +5,11 @@ import Results from "./Results";
 
 export default function Dictionary() {
   let [keyWord, setKeyWord] = useState("");
+  let [results, setResults] = useState({});
 
   function handleResponse(response) {
     console.log(response.data.meanings[0]);
+    setResults(response.data.meanings[0]);
   }
 
   function search(event) {
