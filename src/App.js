@@ -10,7 +10,7 @@ export default function App() {
           <img src={shecodeslogo} className="App-logo" alt="logo" />
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultkeyword="seasons" />
         </main>
         <footer className="App-footer">
           This project was coded by Latoya Natasha Campbell and is open sourced
