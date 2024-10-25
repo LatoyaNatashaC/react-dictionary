@@ -13,8 +13,30 @@ export default function App() {
           <Dictionary defaultkeyword="seasons" />
         </main>
         <footer className="App-footer">
-          This project was coded by Latoya Natasha Campbell and is open sourced
-          on GitHub and hosted by Netlify
+          This project was coded by{" "}
+          <a
+            href="https://github.com/LatoyaNatashaC/react-dictionary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Latoya Natasha Campbell
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/LatoyaNatashaC/react-dictionary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://latoyas-react-dictionary.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
+          </a>
         </footer>
       </div>
     </div>
