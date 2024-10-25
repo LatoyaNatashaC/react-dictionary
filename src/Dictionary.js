@@ -12,10 +12,16 @@ export default function Dictionary(props) {
     console.log(response.data);
     setResults(response.data);
   }
+
   function search() {
     let apiKey = "4f3b0tf3219b4c7758082d0o48eabbbe";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
+
+    let apiImagesUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${apiKey}`;
+    axios
+      .get(apiUrl, { headers: { Authorization: `Bearer ${apiKey}` } })
+      .then(handleImages);
   }
 
   function handleSubmit(event) {
