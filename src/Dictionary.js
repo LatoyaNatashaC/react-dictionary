@@ -12,6 +12,9 @@ export default function Dictionary(props) {
     console.log(response.data);
     setResults(response.data);
   }
+  function handleImages(response) {
+    console.log(response);
+  }
 
   function search() {
     let apiKey = "4f3b0tf3219b4c7758082d0o48eabbbe";
